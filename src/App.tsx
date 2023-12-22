@@ -10,9 +10,9 @@ function App() {
   const increment = () => setCounter(prev => ++prev);
 
   return (
-    <div className="App">
+    <div className="App" data-testid='app'>
       App
-      <h1>{__PLATFORM__} - {__ENV__}</h1>
+      <h1 data-testid='platform'>{__PLATFORM__} - {__ENV__}</h1>
       <div>
         <h1>{counter}</h1>
         <button className={classes.button} onClick={increment}><span>Add</span></button>
